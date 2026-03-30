@@ -1,6 +1,10 @@
 [gd_scene format=3 uid="uid://ddu8li8s60j6e"]
 
 [ext_resource type="Texture2D" uid="uid://ci0sujc3t5cxy" path="res://imgs/Gemini_Generated_Image_yme7l8yme7l8yme7.png" id="1_bj1uy"]
+[ext_resource type="FontFile" uid="uid://d7u2unk1vf2b" path="res://imgs/Honk/Honk-Regular-VariableFont_MORF,SHLN.ttf" id="2_gmcsc"]
+
+[sub_resource type="FontVariation" id="FontVariation_gmcsc"]
+base_font = ExtResource("2_gmcsc")
 
 [node name="MenuPrincipal" type="Control" unique_id=1257426366]
 layout_mode = 3
@@ -30,8 +34,9 @@ offset_bottom = 504.224
 
 [node name="titulo" type="Label" parent="VBoxContainer" unique_id=519141943]
 layout_mode = 2
-text = "titulo que hay que ponerlo re fachero
-"
+theme_override_fonts/font = SubResource("FontVariation_gmcsc")
+theme_override_font_sizes/font_size = 34
+text = "Plata o Plomo"
 horizontal_alignment = 1
 
 [node name="botonjugar" type="Button" parent="VBoxContainer" unique_id=285931102]
