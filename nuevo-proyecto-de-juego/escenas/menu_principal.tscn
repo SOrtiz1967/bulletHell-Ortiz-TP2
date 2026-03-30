@@ -1,7 +1,7 @@
-[gd_scene format=3 uid="uid://bjsdtxdp2143p"]
+[gd_scene format=3 uid="uid://ddu8li8s60j6e"]
 
-[ext_resource type="Texture2D" uid="uid://ci0sujc3t5cxy" path="res://assets/imagenes/Gemini_Generated_Image_yme7l8yme7l8yme7.png" id="1_bj1uy"]
-[ext_resource type="FontFile" uid="uid://d7u2unk1vf2b" path="res://assets/fuentes/Honk/Honk-Regular-VariableFont_MORF,SHLN.ttf" id="2_gmcsc"]
+[ext_resource type="Texture2D" uid="uid://ci0sujc3t5cxy" path="res://imgs/Gemini_Generated_Image_yme7l8yme7l8yme7.png" id="1_bj1uy"]
+[ext_resource type="FontFile" uid="uid://d7u2unk1vf2b" path="res://imgs/Honk/Honk-Regular-VariableFont_MORF,SHLN.ttf" id="2_gmcsc"]
 
 [sub_resource type="FontVariation" id="FontVariation_gmcsc"]
 base_font = ExtResource("2_gmcsc")

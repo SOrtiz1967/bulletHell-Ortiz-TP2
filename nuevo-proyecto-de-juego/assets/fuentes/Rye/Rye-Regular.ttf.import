@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://d7u2unk1vf2b"
-path="res://.godot/imported/Honk-Regular-VariableFont_MORF,SHLN.ttf-b6150cf85ccd8ee9a521fef84a84af1d.fontdata"
+uid="uid://b36uf54q7aqbc"
+path="res://.godot/imported/Rye-Regular.ttf-454d03088d9cb72fd87f99c9f7d16825.fontdata"
 
 [deps]
 
-source_file="res://imgs/Honk/Honk-Regular-VariableFont_MORF,SHLN.ttf"
-dest_files=["res://.godot/imported/Honk-Regular-VariableFont_MORF,SHLN.ttf-b6150cf85ccd8ee9a521fef84a84af1d.fontdata"]
+source_file="res://assets/fuentes/Rye/Rye-Regular.ttf"
+dest_files=["res://.godot/imported/Rye-Regular.ttf-454d03088d9cb72fd87f99c9f7d16825.fontdata"]
 
 [params]
 
