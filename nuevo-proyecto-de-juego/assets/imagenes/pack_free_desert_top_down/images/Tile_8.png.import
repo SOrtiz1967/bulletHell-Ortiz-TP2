@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ci0sujc3t5cxy"
-path="res://.godot/imported/Gemini_Generated_Image_yme7l8yme7l8yme7.png-d711e5394a194b8039cbd4d04a454893.ctex"
+uid="uid://ct6ot5bdq6qw1"
+path="res://.godot/imported/Tile_8.png-785e3fd21a34f3ab8c4af7b7f63b3d10.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/imagenes/Gemini_Generated_Image_yme7l8yme7l8yme7.png"
-dest_files=["res://.godot/imported/Gemini_Generated_Image_yme7l8yme7l8yme7.png-d711e5394a194b8039cbd4d04a454893.ctex"]
+source_file="res://assets/imagenes/pack_free_desert_top_down/images/Tile_8.png"
+dest_files=["res://.godot/imported/Tile_8.png-785e3fd21a34f3ab8c4af7b7f63b3d10.ctex"]
 
 [params]
 

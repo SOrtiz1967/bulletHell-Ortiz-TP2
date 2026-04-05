@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://b14fcupl5sv1x"]
+
+[ext_resource type="Texture2D" uid="uid://bbyxw0pljp028" path="res://assets/imagenes/wild_west_free_pack/tile3.png" id="1_4p4of"]
+
+[node name="juego" type="Node2D" unique_id=942885614]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1764614369]
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_4p4of")
