@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bjsdtxdp2143p"]
 
-[ext_resource type="Texture2D" uid="uid://j72kdqt1kec7" path="res://assets/imagenes/WhatsApp Image 2026-04-02 at 7.45.13 PM.jpeg" id="1_gmcsc"]
+[ext_resource type="Texture2D" uid="uid://cvi0v6ao0wys" path="res://assets/imagenes/fondomenu.png" id="1_gmcsc"]
 [ext_resource type="FontFile" uid="uid://b36uf54q7aqbc" path="res://assets/fuentes/Rye/Rye-Regular.ttf" id="2_ul6ys"]
 
 [node name="MenuPrincipal" type="Control" unique_id=1257426366]
