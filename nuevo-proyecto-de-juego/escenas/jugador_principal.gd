@@ -38,7 +38,16 @@ func get_input():
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("shoot"):
 		var bala=bullet.instantiate()
-		bala.position=position
+		bala.global_position=global_position
+		if last_direction == "up":
+			bala.direction = Vector2(0, -1)
+		elif last_direction == "down":
+			bala.direction = Vector2(0, 1)
+		elif last_direction == "left":
+			bala.direction = Vector2(-1, 0)
+		elif last_direction == "right":
+			bala.direction = Vector2(1, 0)
+		
 		get_parent().add_child(bala)
 
 	

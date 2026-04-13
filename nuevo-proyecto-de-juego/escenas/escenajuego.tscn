@@ -447,15 +447,14 @@ animations = [{
 [node name="juego" type="Node2D" unique_id=942885614]
 
 [node name="JugadorPrincipal" type="CharacterBody2D" parent="." unique_id=626485295]
+position = Vector2(576, 324)
 up_direction = Vector2(0.049937617, 0.99875236)
 script = ExtResource("1_hxak1")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="JugadorPrincipal" unique_id=2005780321]
-position = Vector2(589, 344)
 shape = SubResource("RectangleShape2D_x1w6g")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="JugadorPrincipal" unique_id=419565177]
-position = Vector2(592, 336)
 scale = Vector2(1.9583329, 1.9886359)
 sprite_frames = SubResource("SpriteFrames_cfdwr")
 animation = &"run_up"
