@@ -4,16 +4,17 @@
 [ext_resource type="Script" uid="uid://dmw8006avcuow" path="res://escenas/bullet.gd" id="1_blkrf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1dqwh"]
-size = Vector2(6, 2)
+size = Vector2(15, 5)
 
 [node name="bullet" type="Area2D" unique_id=1175907254]
 script = ExtResource("1_blkrf")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=428696364]
+position = Vector2(4.5, 1.5)
 shape = SubResource("RectangleShape2D_1dqwh")
 
 [node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D" unique_id=1308340235]
-position = Vector2(0.010129809, -0.008300826)
+position = Vector2(-0.019999735, -0.0021229684)
 rotation = 1.5707964
-scale = Vector2(0.23677143, 0.19999325)
+scale = Vector2(0.6165736, 0.49927887)
 texture = ExtResource("1_1dqwh")

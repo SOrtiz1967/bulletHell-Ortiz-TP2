@@ -1,5 +1,6 @@
 extends CharacterBody2D
 @onready var animated_sprite = $AnimatedSprite2D
+const bullet= preload("res://escenas/bullet.tscn")
 var speed = 270.0
 var last_direction = "down"
 
@@ -34,5 +35,10 @@ func get_input():
 	
 	update_animation("run")		
 	velocity = input_direction * speed
-	
+func _input(event: InputEvent) -> void:
+	if event.is_action_pressed("shoot"):
+		var bala=bullet.instantiate()
+		bala.position=position
+		get_parent().add_child(bala)
+
 	
