@@ -452,6 +452,7 @@ up_direction = Vector2(0.049937617, 0.99875236)
 script = ExtResource("1_hxak1")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="JugadorPrincipal" unique_id=2005780321]
+position = Vector2(-2, 6)
 shape = SubResource("RectangleShape2D_x1w6g")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="JugadorPrincipal" unique_id=419565177]
