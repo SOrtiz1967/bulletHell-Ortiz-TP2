@@ -1,10 +1,16 @@
 [gd_scene format=3 uid="uid://c1h4chvg0r18"]
 
+[ext_resource type="Script" uid="uid://ukd82kc548mw" path="res://escenas/enemigogen.gd" id="1_tgipw"]
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pedh8"]
+size = Vector2(36, 36)
 
 [node name="enemigogen" type="CharacterBody2D" unique_id=599794196]
+position = Vector2(37, 29)
+script = ExtResource("1_tgipw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1816818802]
+position = Vector2(0, 1)
 shape = SubResource("RectangleShape2D_pedh8")
 
 [node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D" unique_id=2126201291]

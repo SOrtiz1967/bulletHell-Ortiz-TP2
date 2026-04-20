@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://dmkgworcuxpos" path="res://assets/imagenes/vacaroxa--generic-old-west-graphics--v.1.0/vacaroxa--generic-old-west-graphics--v.1.0/Generic Old West Graphicis/Player/Player Side Sheet.png" id="3_f87v1"]
 [ext_resource type="Texture2D" uid="uid://bhl4iepmt8rpx" path="res://assets/imagenes/vacaroxa--generic-old-west-graphics--v.1.0/vacaroxa--generic-old-west-graphics--v.1.0/Generic Old West Graphicis/Player/Player Side Sheetleft.png" id="4_0i2ib"]
 [ext_resource type="Texture2D" uid="uid://bk6wx86g1d0ji" path="res://assets/imagenes/vacaroxa--generic-old-west-graphics--v.1.0/vacaroxa--generic-old-west-graphics--v.1.0/Generic Old West Graphicis/Player/Player Back Sheet.png" id="4_q5u2k"]
+[ext_resource type="PackedScene" uid="uid://c1h4chvg0r18" path="res://escenas/enemigogen.tscn" id="6_f87v1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x1w6g"]
 size = Vector2(32, 64)
@@ -459,3 +460,6 @@ shape = SubResource("RectangleShape2D_x1w6g")
 scale = Vector2(1.9583329, 1.9886359)
 sprite_frames = SubResource("SpriteFrames_cfdwr")
 animation = &"run_up"
+
+[node name="enemigogen" parent="." unique_id=599794196 instance=ExtResource("6_f87v1")]
+position = Vector2(379, 42)
