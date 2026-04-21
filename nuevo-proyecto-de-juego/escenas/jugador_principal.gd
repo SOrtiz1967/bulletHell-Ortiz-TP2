@@ -3,6 +3,7 @@ extends CharacterBody2D
 const bullet= preload("res://escenas/bullet.tscn")
 var speed = 270.0
 var last_direction = "down"
+var vidas = 5 
 
 func _physics_process(delta: float):
 	get_input()
@@ -49,5 +50,8 @@ func _input(event: InputEvent) -> void:
 			bala.direction = Vector2(1, 0)
 		
 		get_parent().add_child(bala)
-
+func recibir_daño(dañorecibido: int) -> void:
+	vidas -= dañorecibido
+	if vidas<=0:
+		queue_free()
 	
