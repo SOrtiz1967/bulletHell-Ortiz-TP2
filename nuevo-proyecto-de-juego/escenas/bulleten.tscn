@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bd1q6s7ms6fej" path="res://assets/imagenes/Bullets_20x30_v1/sprites/bullet0.png" id="2_nl8uy"]
 
 [node name="bulleten" unique_id=1175907254 instance=ExtResource("1_y1fa5")]
-collision_mask = 1
+collision_mask = 5
 
 [node name="CollisionShape2D" parent="." index="0" unique_id=428696364]
 position = Vector2(4.5, 4)

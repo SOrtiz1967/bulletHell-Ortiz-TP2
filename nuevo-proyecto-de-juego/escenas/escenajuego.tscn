@@ -3,9 +3,10 @@
 [ext_resource type="PackedScene" uid="uid://d34bwwbngriel" path="res://escenas/jugador_principal.tscn" id="1_waqxd"]
 [ext_resource type="Texture2D" uid="uid://dbiocruift644" path="res://assets/imagenes/DesertTiles.png" id="3_1axf5"]
 [ext_resource type="PackedScene" uid="uid://26jhe8y385et" path="res://escenas/spammer.tscn" id="4_hxak1"]
-[ext_resource type="Script" uid="uid://vl474xtrdlv7" path="res://escenas/canvas_layer.gd" id="5_f87v1"]
+[ext_resource type="Script" uid="uid://vl474xtrdlv7" path="res://scripts/canvas_layer.gd" id="5_f87v1"]
 [ext_resource type="PackedScene" uid="uid://c1h4chvg0r18" path="res://escenas/enemigogen.tscn" id="6_f87v1"]
 [ext_resource type="Texture2D" uid="uid://biw8gsmtg2bp0" path="res://assets/imagenes/red-heart-16x16-tile-health-260nw-2743520395-removebg-preview.png" id="6_q5u2k"]
+[ext_resource type="PackedScene" uid="uid://c7lk38i6r7h4w" path="res://escenas/torreta.tscn" id="7_q5u2k"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1axf5"]
 texture = ExtResource("3_1axf5")
@@ -175,5 +176,8 @@ expand_mode = 2
 layout_mode = 2
 texture = ExtResource("6_q5u2k")
 expand_mode = 2
+
+[node name="Torreta" parent="." unique_id=825317771 instance=ExtResource("7_q5u2k")]
+position = Vector2(872, 80)
 
 [connection signal="vida_cambiada" from="JugadorPrincipal" to="CanvasLayer" method="_on_jugador_principal_vida_cambiada"]
