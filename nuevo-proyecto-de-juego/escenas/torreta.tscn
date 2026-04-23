@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://c7lk38i6r7h4w"]
+
+[ext_resource type="Texture2D" uid="uid://c1tp7pqe622b5" path="res://icon.svg" id="1_4rd4a"]
+[ext_resource type="Script" uid="uid://dtj0ngujdeq0k" path="res://scripts/torreta.gd" id="1_shoi1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_shoi1"]
+size = Vector2(64, 48)
+
+[node name="Torreta" type="CharacterBody2D" unique_id=825317771]
+script = ExtResource("1_shoi1")
+rafaga = null
+cadencia = null
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=746951036]
+shape = SubResource("RectangleShape2D_shoi1")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=239068462]
+position = Vector2(0, -3.8146973e-06)
+scale = Vector2(0.5, 0.4375)
+texture = ExtResource("1_4rd4a")
+
+[node name="Timer" type="Timer" parent="." unique_id=1028768351]

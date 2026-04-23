@@ -8,6 +8,7 @@ const velocidad_rotacion= 100
 const tiempo_espera_disparo=0.2
 const spawn_count_point=4
 const radio= 100
+var vidas = 5
 
 #todo tengo que corregir el spanglish en este script
 func _ready():
@@ -24,6 +25,11 @@ func _ready():
 func _process(delta: float) -> void:
 	var new_rotation = rotator.rotation_degrees + velocidad_rotacion * delta
 	rotator.rotation_degrees = fmod(new_rotation, 360)
+	
+func recibir_daño(dañorecibido: int) -> void:
+	vidas -= dañorecibido
+	if vidas<=0:
+		queue_free()
 
 func _on_timerdisparo_timeout() -> void:
 	for s in rotator.get_children():
