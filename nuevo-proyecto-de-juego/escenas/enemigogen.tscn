@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://c1h4chvg0r18"]
 
-[ext_resource type="Script" uid="uid://ukd82kc548mw" path="res://escenas/enemigogen.gd" id="1_tgipw"]
+[ext_resource type="Script" uid="uid://ukd82kc548mw" path="res://scripts/enemigogen.gd" id="1_tgipw"]
 [ext_resource type="Texture2D" uid="uid://baqrsctr8h8nb" path="res://assets/imagenes/pack_free_desert_top_down/images/Object_14.png" id="2_546f1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pedh8"]
@@ -11,7 +11,7 @@ size = Vector2(48, 48)
 
 [node name="enemigogen" type="CharacterBody2D" unique_id=599794196]
 collision_layer = 2
-collision_mask = 5
+collision_mask = 7
 motion_mode = 1
 script = ExtResource("1_tgipw")
 

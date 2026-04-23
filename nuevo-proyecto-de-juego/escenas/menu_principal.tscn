@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://ddu8li8s60j6e"]
 
 [ext_resource type="Texture2D" uid="uid://cvi0v6ao0wys" path="res://assets/imagenes/fondomenu.png" id="1_arcut"]
-[ext_resource type="Script" uid="uid://fmvg3np5cbna" path="res://escenas/menu_principal.gd" id="1_qf1q6"]
+[ext_resource type="Script" uid="uid://fmvg3np5cbna" path="res://scripts/menu_principal.gd" id="1_qf1q6"]
 [ext_resource type="FontFile" uid="uid://b36uf54q7aqbc" path="res://assets/fuentes/Rye/Rye-Regular.ttf" id="2_arcut"]
 
 [node name="MenuPrincipal" type="Control" unique_id=1257426366]

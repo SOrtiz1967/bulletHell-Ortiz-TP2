@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://cm28qhkd0ujsv"]
+
+[ext_resource type="PackedScene" uid="uid://wi6q3pkyqs8w" path="res://escenas/bullet.tscn" id="1_y1fa5"]
+[ext_resource type="Texture2D" uid="uid://bd1q6s7ms6fej" path="res://assets/imagenes/Bullets_20x30_v1/sprites/bullet0.png" id="2_nl8uy"]
+
+[node name="bulleten" unique_id=1175907254 instance=ExtResource("1_y1fa5")]
+collision_mask = 1
+
+[node name="CollisionShape2D" parent="." index="0" unique_id=428696364]
+position = Vector2(4.5, 4)
+
+[node name="Sprite2D" parent="CollisionShape2D" index="0" unique_id=1308340235]
+texture = ExtResource("2_nl8uy")
