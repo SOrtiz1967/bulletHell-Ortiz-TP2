@@ -25,7 +25,7 @@ func recibir_daño(dañorecibido: int) -> void:
 	if vidas <= 17 and fase_actual ==1:
 		fase_actual=2
 		velocidad= 70
-		timer.wait_time = 1.1
+		timer.wait_time = 1.2
 		apertura= deg_to_rad(15)
 		modulate=Color(1.0, 0.5, 0.5)
 	if vidas<=0:

@@ -125,7 +125,7 @@ func _process(delta: float) -> void:
 					avanzar_fase(7)
 		7:#jefe final
 			var jugador=get_tree().get_first_node_in_group("jugador")
-			
+			#Es muy dificil el nivel final, habria que soltar un par de cactus 
 			if not jefe_spawneado:
 				spawn_jefe()
 				if jugador and jugador.has_method("Curarse"):
