@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://ck0ow3u4h1r1j"]
+
+[ext_resource type="Script" uid="uid://pwgloj5g7ke2" path="res://control.gd" id="1_xiopd"]
+[ext_resource type="FontFile" uid="uid://b36uf54q7aqbc" path="res://assets/fuentes/Rye/Rye-Regular.ttf" id="2_sssm0"]
+
+[node name="victoria" type="Control" unique_id=1884642781]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_xiopd")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1353959675]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 28.800001
+anchor_bottom = 16.0
+offset_bottom = 8.0
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="." unique_id=348804671]
+layout_mode = 0
+offset_left = 312.0
+offset_top = 96.0
+offset_right = 824.0
+offset_bottom = 192.0
+theme_override_fonts/font = ExtResource("2_sssm0")
+theme_override_font_sizes/font_size = 40
+text = "GANASTE!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="." unique_id=760391224]
+layout_mode = 0
+offset_left = 440.0
+offset_top = 320.0
+offset_right = 712.0
+offset_bottom = 408.0
+text = "Volver a jugar"
+
+[node name="Label2" type="Label" parent="." unique_id=467684348]
+layout_mode = 0
+offset_left = 256.0
+offset_top = 192.0
+offset_right = 924.0
+offset_bottom = 288.0
+text = "No es poca cosa a ver esquivado tantas balas, matado tantos cactus y sobrevivir al jefe..."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

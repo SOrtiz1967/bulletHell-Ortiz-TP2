@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://cuj2r25r18bsa"]
 
 [ext_resource type="Script" uid="uid://rcmto85r3d4" path="res://scripts/jefe.gd" id="1_3t1mq"]
-[ext_resource type="Texture2D" uid="uid://ddjhu547cmd6u" path="res://assets/imagenes/pack_free_desert_top_down/images/Object_7.png" id="2_3t1mq"]
+[ext_resource type="Texture2D" uid="uid://1j7jov0bp07x" path="res://assets/imagenes/sarlac.png" id="2_3t1mq"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_vmol7"]
-size = Vector2(104, 112)
+[sub_resource type="CircleShape2D" id="CircleShape2D_2su6u"]
+radius = 53.66563
 
 [node name="jefe" type="CharacterBody2D" unique_id=1518462678]
 collision_layer = 2
@@ -12,11 +12,13 @@ collision_mask = 7
 script = ExtResource("1_3t1mq")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1766355772]
+position = Vector2(16, 0)
+scale = Vector2(0.2751479, 0.30487806)
 texture = ExtResource("2_3t1mq")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=571287277]
-position = Vector2(4, 0)
-shape = SubResource("RectangleShape2D_vmol7")
+position = Vector2(16, 0)
+shape = SubResource("CircleShape2D_2su6u")
 
 [node name="canon" type="Marker2D" parent="." unique_id=725142532]
 

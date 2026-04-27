@@ -116,9 +116,12 @@ func _process(delta: float) -> void:
 					spawn_spammer()
 					reloj_spammer= 0.0
 			else:
-				avanzar_fase(7)
-				for enemigo in get_tree().get_nodes_in_group("enemigos"):
+				if enemigos_vivos == 0:
+					avanzar_fase(7)
+				elif tiempo_en_fase > 40.0: 
+					for enemigo in get_tree().get_nodes_in_group("enemigos"):
 						enemigo.queue_free()
+					avanzar_fase(7)
 		7:#jefe final
 			if not jefe_spawneado:
 				spawn_jefe()

@@ -43,4 +43,17 @@ theme_override_font_sizes/font_size = 24
 text = "JUGAR
 "
 
+[node name="Label" type="Label" parent="." unique_id=278726230]
+layout_mode = 0
+offset_left = 336.0
+offset_top = 280.0
+offset_right = 816.0
+offset_bottom = 360.0
+text = "Moverse: Teclas WASD
+Disparar: espacio en la direccion que quieras disparar
+Los cactus pueden parecer amigos por que si los matas te regeneran
+pero no te dejes acorralar por ellos
+"
+horizontal_alignment = 1
+
 [connection signal="pressed" from="VBoxContainer/botonjugar" to="." method="_on_botonjugar_pressed"]

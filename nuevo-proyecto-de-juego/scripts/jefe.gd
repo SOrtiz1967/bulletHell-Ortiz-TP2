@@ -27,6 +27,7 @@ func recibir_daño(dañorecibido: int) -> void:
 		timer.wait_time = 1.1
 		modulate=Color(1.0, 0.5, 0.5)
 	if vidas<=0:
+		get_tree().change_scene_to_file("res://escenas/victoria.tscn")
 		queue_free()
 
 func anillo() -> void:

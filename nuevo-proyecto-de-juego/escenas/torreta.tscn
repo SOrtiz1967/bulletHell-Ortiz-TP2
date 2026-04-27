@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://c7lk38i6r7h4w"]
 
-[ext_resource type="Texture2D" uid="uid://c1tp7pqe622b5" path="res://icon.svg" id="1_4rd4a"]
 [ext_resource type="Script" uid="uid://dtj0ngujdeq0k" path="res://scripts/torreta.gd" id="1_shoi1"]
+[ext_resource type="Texture2D" uid="uid://ch7mrb104nwyg" path="res://assets/imagenes/tanque.png" id="2_shoi1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_shoi1"]
 size = Vector2(64, 56)
@@ -12,9 +12,9 @@ collision_mask = 5
 script = ExtResource("1_shoi1")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=239068462]
-position = Vector2(0, -3.8146973e-06)
-scale = Vector2(0.5, 0.4375)
-texture = ExtResource("1_4rd4a")
+position = Vector2(-4.7683716e-07, 2.3841858e-07)
+scale = Vector2(0.15609756, 0.105263166)
+texture = ExtResource("2_shoi1")
 
 [node name="Timer" type="Timer" parent="." unique_id=1028768351]
 autostart = true

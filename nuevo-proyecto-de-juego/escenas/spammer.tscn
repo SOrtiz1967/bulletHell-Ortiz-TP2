@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://26jhe8y385et"]
 
 [ext_resource type="Script" uid="uid://dxvfcmyowb6tl" path="res://scripts/spammer.gd" id="1_8h35s"]
-[ext_resource type="Texture2D" uid="uid://c1tp7pqe622b5" path="res://icon.svg" id="2_5tp1x"]
+[ext_resource type="Texture2D" uid="uid://cqju30q5ye6di" path="res://assets/imagenes/runa.png" id="2_8h35s"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kuobn"]
 size = Vector2(112, 88)
@@ -12,8 +12,8 @@ collision_mask = 3
 script = ExtResource("1_8h35s")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=331582322]
-scale = Vector2(0.875, 0.6875)
-texture = ExtResource("2_5tp1x")
+scale = Vector2(0.32858977, 0.24192758)
+texture = ExtResource("2_8h35s")
 
 [node name="Timerdisparo" type="Timer" parent="." unique_id=311630560]
 
