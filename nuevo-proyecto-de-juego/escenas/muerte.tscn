@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://ctr0ixy2cpuet"]
+
+[ext_resource type="Script" uid="uid://pwgloj5g7ke2" path="res://control.gd" id="1_uwrrf"]
+[ext_resource type="FontFile" uid="uid://b36uf54q7aqbc" path="res://assets/fuentes/Rye/Rye-Regular.ttf" id="2_hvdob"]
+
+[node name="muerte" type="Control" unique_id=1884642781]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_uwrrf")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1353959675]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 28.800001
+anchor_bottom = 16.0
+offset_bottom = 8.0
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="." unique_id=348804671]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 168.0
+offset_right = 832.0
+offset_bottom = 264.0
+theme_override_fonts/font = ExtResource("2_hvdob")
+theme_override_font_sizes/font_size = 40
+text = "PERDISTE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="." unique_id=760391224]
+layout_mode = 0
+offset_left = 440.0
+offset_top = 288.0
+offset_right = 712.0
+offset_bottom = 376.0
+text = "REINICIAR"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -1,9 +1,12 @@
 extends CharacterBody2D
 
 
-var vidas = 5
-var velocidad =140.0
+var vidas = 2
+var velocidad =120.0
 var daño=1
+
+func _ready() -> void:
+	add_to_group("enemigos")
 
 
 func _physics_process(delta: float) -> void:
@@ -16,6 +19,9 @@ func _physics_process(delta: float) -> void:
 func recibir_daño(dañorecibido: int) -> void:
 	vidas -= dañorecibido
 	if vidas<=0:
+		var jugador=get_tree().get_first_node_in_group("jugador")
+		if jugador and jugador.has_method("Curarse"):
+			jugador.Curarse(1)
 		queue_free()
 
 

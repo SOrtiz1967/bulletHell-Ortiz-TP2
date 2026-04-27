@@ -8,10 +8,12 @@ const velocidad_rotacion= 100
 const tiempo_espera_disparo=0.2
 const spawn_count_point=4
 const radio= 100
-var vidas = 5
+var vidas = 4
 
 #todo tengo que corregir el spanglish en este script
 func _ready():
+	
+	add_to_group("enemigos")
 	var paso = 2* PI / spawn_count_point
 	for i in range(spawn_count_point):
 		var spawn_point = Node2D.new()

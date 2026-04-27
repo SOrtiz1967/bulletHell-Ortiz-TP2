@@ -15,15 +15,16 @@ collision_mask = 7
 motion_mode = 1
 script = ExtResource("1_tgipw")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1816818802]
-shape = SubResource("RectangleShape2D_pedh8")
-
-[node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D" unique_id=2126201291]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2126201291]
 position = Vector2(0, -8)
 scale = Vector2(0.3125, 0.28125)
 texture = ExtResource("2_546f1")
 
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1816818802]
+shape = SubResource("RectangleShape2D_pedh8")
+
 [node name="Area2D" type="Area2D" parent="." unique_id=343691521]
+collision_mask = 7
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=930051763]
 shape = SubResource("RectangleShape2D_546f1")
