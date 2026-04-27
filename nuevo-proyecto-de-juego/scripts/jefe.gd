@@ -7,6 +7,7 @@ var velocidad=33.0
 var daño=1
 var fase_actual=1
 var turno=0
+var apertura=deg_to_rad(25)
 func _ready() -> void:
 	add_to_group("enemigos")
 	timer.wait_time=2.0
@@ -21,10 +22,11 @@ func _physics_process(delta: float) -> void:
 		
 func recibir_daño(dañorecibido: int) -> void:
 	vidas -=dañorecibido
-	if vidas <= 25 and fase_actual ==1:
+	if vidas <= 17 and fase_actual ==1:
 		fase_actual=2
 		velocidad= 70
 		timer.wait_time = 1.1
+		apertura= deg_to_rad(15)
 		modulate=Color(1.0, 0.5, 0.5)
 	if vidas<=0:
 		get_tree().change_scene_to_file("res://escenas/victoria.tscn")
@@ -49,7 +51,7 @@ func escopetazo() -> void:
 	var vector_al_jugador=(jugador.global_position - marker.global_position).normalized()
 	var angulo_central= vector_al_jugador.angle()
 	var cantidad_balas=5
-	var apertura=deg_to_rad(25)
+	
 	var angulo_inicio=angulo_central-(apertura*(cantidad_balas-1) /2.0)#calculo para que el centro del tiro sea elk jugador
 	for i in range(cantidad_balas):
 		var nueva_bala = bescena_bala.instantiate()

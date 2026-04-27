@@ -91,7 +91,7 @@ func _process(delta: float) -> void:
 			else:
 				if enemigos_vivos==0:
 					avanzar_fase(5)
-				elif tiempo_en_fase > 50.0:
+				elif tiempo_en_fase > 35.0:
 					for enemigo in get_tree().get_nodes_in_group("enemigos"):
 						enemigo.queue_free()
 					avanzar_fase(5)
@@ -125,8 +125,7 @@ func _process(delta: float) -> void:
 					avanzar_fase(7)
 		7:#jefe final
 			var jugador=get_tree().get_first_node_in_group("jugador")
-			if jugador and jugador.has_method("Curarse"):
-				jugador.Curarse(4)
+			
 			if not jefe_spawneado:
 				spawn_jefe()
 				if jugador and jugador.has_method("Curarse"):
