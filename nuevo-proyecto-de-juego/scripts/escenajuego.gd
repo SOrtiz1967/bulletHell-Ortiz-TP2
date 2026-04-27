@@ -42,14 +42,16 @@ func _process(delta: float) -> void:
 
 	match fase_actual:
 		1:
-			#oleada 1 solo cactus
-			if tiempo_en_fase < 20.0:
-				if reloj_cactus >= 1.0:
-					#hay q acer algo con la posiccion
-					spawn_cactus()
-					reloj_cactus=0.0
-			else:
-				avanzar_fase(2)
+			var jugador=get_tree().get_first_node_in_group("jugador")
+			if reloj_cactus> 6.5:
+				spawn_cactus()
+				reloj_cactus=0.0
+			#Es muy dificil el nivel final, habria que soltar un par de cactus 
+			if not jefe_spawneado:
+				spawn_jefe()
+				if jugador and jugador.has_method("Curarse"):
+					jugador.Curarse(4)
+				jefe_spawneado = true
 		2:#torretas y caactys
 			if tiempo_en_fase < 25.0:
 				if reloj_torreta>=5.5:
@@ -125,6 +127,9 @@ func _process(delta: float) -> void:
 					avanzar_fase(7)
 		7:#jefe final
 			var jugador=get_tree().get_first_node_in_group("jugador")
+			if reloj_cactus> 8.0:
+				spawn_cactus()
+				reloj_cactus=0.0
 			#Es muy dificil el nivel final, habria que soltar un par de cactus 
 			if not jefe_spawneado:
 				spawn_jefe()
