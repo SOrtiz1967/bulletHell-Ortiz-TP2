@@ -1,10 +1,11 @@
 [gd_scene format=4 uid="uid://b14fcupl5sv1x"]
 
-[ext_resource type="Script" uid="uid://d30h2k1b6rl63" path="res://escenas/escenajuego.gd" id="1_q5u2k"]
+[ext_resource type="Script" uid="uid://d30h2k1b6rl63" path="res://scripts/escenajuego.gd" id="1_q5u2k"]
 [ext_resource type="PackedScene" uid="uid://d34bwwbngriel" path="res://escenas/jugador_principal.tscn" id="1_waqxd"]
 [ext_resource type="Texture2D" uid="uid://dbiocruift644" path="res://assets/imagenes/DesertTiles.png" id="3_1axf5"]
 [ext_resource type="Script" uid="uid://vl474xtrdlv7" path="res://scripts/canvas_layer.gd" id="5_f87v1"]
 [ext_resource type="Texture2D" uid="uid://biw8gsmtg2bp0" path="res://assets/imagenes/red-heart-16x16-tile-health-260nw-2743520395-removebg-preview.png" id="6_q5u2k"]
+[ext_resource type="PackedScene" uid="uid://dejhofb0clrhc" path="res://escenas/menu_pausa.tscn" id="6_x1w6g"]
 [ext_resource type="Script" uid="uid://b6ywfuu4ruhsi" path="res://scripts/cargador.gd" id="7_kva3u"]
 [ext_resource type="Texture2D" uid="uid://dse8eb5kv3wpo" path="res://assets/imagenes/Bullets_20x30_v1/sprites/bullet8.png" id="7_x1w6g"]
 
@@ -166,6 +167,8 @@ expand_mode = 2
 layout_mode = 2
 texture = ExtResource("6_q5u2k")
 expand_mode = 2
+
+[node name="MenuPausa" parent="." unique_id=2015048907 instance=ExtResource("6_x1w6g")]
 
 [node name="Cargador" type="CanvasLayer" parent="." unique_id=1601655382]
 script = ExtResource("7_kva3u")

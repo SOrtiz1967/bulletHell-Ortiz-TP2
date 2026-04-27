@@ -6,6 +6,7 @@ const jefe = preload("res://escenas/jefe.tscn")
 
 
 
+
 var tiempo_jugado: float = 0.0
 var reloj_cactus: float = 0.0
 var reloj_torreta: float = 0.0
@@ -90,13 +91,13 @@ func _process(delta: float) -> void:
 			else:
 				if enemigos_vivos==0:
 					avanzar_fase(5)
-				elif tiempo_en_fase > 30.0:
+				elif tiempo_en_fase > 50.0:
 					for enemigo in get_tree().get_nodes_in_group("enemigos"):
 						enemigo.queue_free()
 					avanzar_fase(5)
 		#matar spamers a lo loco
 		5:
-			if spammers_creados<5:
+			if spammers_creados<7:
 				if spammers_vivos==0:
 					spawn_spammer()
 					spammers_creados+=1
@@ -123,8 +124,13 @@ func _process(delta: float) -> void:
 						enemigo.queue_free()
 					avanzar_fase(7)
 		7:#jefe final
+			var jugador=get_tree().get_first_node_in_group("jugador")
+			if jugador and jugador.has_method("Curarse"):
+				jugador.Curarse(4)
 			if not jefe_spawneado:
 				spawn_jefe()
+				if jugador and jugador.has_method("Curarse"):
+					jugador.Curarse(4)
 				jefe_spawneado = true
 
 func avanzar_fase(nueva_fase: int) -> void:

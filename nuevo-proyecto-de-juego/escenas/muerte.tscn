@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://ctr0ixy2cpuet"]
 
-[ext_resource type="Script" uid="uid://pwgloj5g7ke2" path="res://control.gd" id="1_uwrrf"]
+[ext_resource type="Script" uid="uid://pwgloj5g7ke2" path="res://scripts/control.gd" id="1_uwrrf"]
 [ext_resource type="FontFile" uid="uid://b36uf54q7aqbc" path="res://assets/fuentes/Rye/Rye-Regular.ttf" id="2_hvdob"]
 
 [node name="muerte" type="Control" unique_id=1884642781]

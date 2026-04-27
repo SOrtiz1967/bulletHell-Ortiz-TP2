@@ -2,8 +2,8 @@ extends CharacterBody2D
 const bescena_bala = preload("res://escenas/bulleten.tscn")
 @onready var marker=$canon
 @onready var timer=$TimerDisparo
-var vidas = 50
-var velocidad=40.0
+var vidas = 60
+var velocidad=33.0
 var daño=1
 var fase_actual=1
 var turno=0
@@ -49,7 +49,7 @@ func escopetazo() -> void:
 	var vector_al_jugador=(jugador.global_position - marker.global_position).normalized()
 	var angulo_central= vector_al_jugador.angle()
 	var cantidad_balas=5
-	var apertura=deg_to_rad(15)
+	var apertura=deg_to_rad(25)
 	var angulo_inicio=angulo_central-(apertura*(cantidad_balas-1) /2.0)#calculo para que el centro del tiro sea elk jugador
 	for i in range(cantidad_balas):
 		var nueva_bala = bescena_bala.instantiate()

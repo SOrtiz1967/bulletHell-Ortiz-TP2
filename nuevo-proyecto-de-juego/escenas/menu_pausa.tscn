@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://dejhofb0clrhc"]
+
+[ext_resource type="Script" uid="uid://cdj6us2xipxfg" path="res://scripts/muenupausa.gd" id="1_ceax1"]
+
+[node name="MenuPausa" type="CanvasLayer" unique_id=2015048907]
+process_mode = 3
+script = ExtResource("1_ceax1")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1224956611]
+offset_left = -1.0
+offset_right = 1155.0
+offset_bottom = 654.0
+color = Color(0.21960784, 0.21960784, 0.21960784, 0.5137255)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1873013795]
+offset_left = 555.0
+offset_top = 258.0
+offset_right = 595.0
+offset_bottom = 279.0
+
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=736931777]
+layout_mode = 2
+text = "seguir jugando"
+
+[node name="Button2" type="Button" parent="VBoxContainer" unique_id=1854228807]
+layout_mode = 2
+text = "reiniciar"
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_button_2_pressed"]

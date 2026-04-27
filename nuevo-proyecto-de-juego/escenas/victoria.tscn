@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://ck0ow3u4h1r1j"]
 
-[ext_resource type="Script" uid="uid://pwgloj5g7ke2" path="res://control.gd" id="1_xiopd"]
+[ext_resource type="Script" uid="uid://pwgloj5g7ke2" path="res://scripts/control.gd" id="1_xiopd"]
+[ext_resource type="Texture2D" uid="uid://qq23vjnou3cm" path="res://assets/imagenes/victoria.jpg" id="2_e326f"]
 [ext_resource type="FontFile" uid="uid://b36uf54q7aqbc" path="res://assets/fuentes/Rye/Rye-Regular.ttf" id="2_sssm0"]
 
 [node name="victoria" type="Control" unique_id=1884642781]
@@ -10,13 +11,11 @@ offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("1_xiopd")
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=1353959675]
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 28.800001
-anchor_bottom = 16.0
-offset_bottom = 8.0
-color = Color(0, 0, 0, 1)
+[node name="TextureRect" type="TextureRect" parent="." unique_id=597387939]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("2_e326f")
 
 [node name="Label" type="Label" parent="." unique_id=348804671]
 layout_mode = 0
@@ -40,11 +39,12 @@ text = "Volver a jugar"
 
 [node name="Label2" type="Label" parent="." unique_id=467684348]
 layout_mode = 0
-offset_left = 256.0
-offset_top = 192.0
-offset_right = 924.0
-offset_bottom = 288.0
-text = "No es poca cosa a ver esquivado tantas balas, matado tantos cactus y sobrevivir al jefe..."
+offset_left = 163.0
+offset_top = 196.0
+offset_right = 951.0
+offset_bottom = 292.0
+theme_override_fonts/font = ExtResource("2_sssm0")
+text = "No es poca cosa haber esquivado tantas balas, matado tantos cactus y sobrevivir al sarlac del desierto"
 horizontal_alignment = 1
 vertical_alignment = 1
 
